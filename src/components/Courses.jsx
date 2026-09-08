@@ -1,4 +1,5 @@
 import CourseCard from "./CourseCard";
+import { useState } from "react";
 
 const courses = [
   {
@@ -34,18 +35,35 @@ const courses = [
 ];
 
 function Courses() {
+  const [searchTerm, setSearchTerm] = useState("");
+  const normalizedSearchTerm = searchTerm.trim().toLowerCase();
+  const filteredCourses = courses.filter((course) =>
+    course.title.toLowerCase().includes(normalizedSearchTerm),
+  );
+
   return (
     <section className="courses-section" aria-labelledby="available-courses-heading">
       <h3 id="available-courses-heading">Available courses</h3>
-      {courses.length === 0 ? (
+      <label className="course-search">
+        <span>Search courses</span>
+        <input
+          type="search"
+          placeholder="Search by course name..."
+          className="search_btn"
+          value={searchTerm}
+          onChange={(event) => setSearchTerm(event.target.value)}
+        />
+      </label>
+      {filteredCourses.length === 0 ? (
         <p>No courses Available</p>
       ) : (
         <div className="course-grid">
-          {courses.map((course) => (
+          {filteredCourses.map((course) => (
             <CourseCard
               key={`${course.title}-${course.instructor}`}
               {...course}
               isFeatued={true}
+              searchTerm={normalizedSearchTerm}
             />
           ))}
         </div>

@@ -5,7 +5,6 @@ const Header = () => {
         CodeBridge Academy
       </a>
       <nav aria-label="Main navigation">
-        <input type="search" placeholder="Search..." className="search_btn"/>
         <a href="#catalog-heading">Catalog</a>
         <a href="#footer">About</a>
       </nav>
