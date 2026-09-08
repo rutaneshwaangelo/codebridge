@@ -25,13 +25,16 @@ function Courses() {
     ];
         return <div style={{padding: "20px", maxwidth: "800px", margin: " auto"}}>
             <h2>Available Courses</h2>
-            {courseList.length===0?(<P style={{color:'6483b'}}>No course Available</P>):(
+            {courses.length===0?(<P style={{color:'6483b'}}>No course Available</P>):(
                 <div style={{display: "flex", flexWrap: "wrap", gap: "20px",marginTop: "20px"}}>
                     {/*Display Data */}
-                    {courseList.map((course) => (
+                    {courses.map((course) => (
                         <CourseCard key={course.id} course={course} />
                     ))}
-                </div>
+                </div> 
             )}
         </div>;
     };
+
+
+    export default Courses;
