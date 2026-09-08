@@ -13,8 +13,8 @@ function Home() {
       <main>
         <section className="welcome-section">
           <p className="eyebrow">CodeBridge Academy</p>
-          <h1>Welcome to your next chapter in tech.</h1>
-          <p className="slogan">Bridge learning to real software careers</p>
+          <h1>Yo You are welcome pal</h1>
+          <p className="slogan">Yesirrr u heard it correctly</p>
         </section>
 
         <Banner />
