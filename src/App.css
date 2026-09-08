@@ -158,7 +158,7 @@ footer p {
 
 /* MOBILE RESPONSIVE */
 
-@media (max-width: 600px) {
+@media (max-width: 600px) {    
   header {
     padding: 12px 20px;
   }
