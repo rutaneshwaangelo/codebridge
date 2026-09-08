@@ -1,15 +1,15 @@
-function Header() {
+const Header = () => {
   return (
-    <header>
-      <h1>CodeBridge Academy</h1>
-
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Courses</a>
-        <a href="#">Login</a>
+    <header className="site-header">
+      <a className="brand" href="/">
+        CodeBridge Academy
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#catalog-heading">Catalog</a>
+        <a href="#footer">About</a>
       </nav>
     </header>
   );
-}
+};
 
 export default Header;

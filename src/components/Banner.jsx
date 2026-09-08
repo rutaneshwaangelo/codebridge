@@ -1,11 +1,13 @@
-function Banner() {
+const Banner = () => {
   return (
-    <section>
-      <h2>Learn New Skills and Build Your Future</h2>
-
-      <button>Browse Catalog</button>
+    <section className="banner" aria-labelledby="banner-heading">
+      <div>
+        <p className="banner-label">Start where you are</p>
+        <h2 id="banner-heading">Turn curiosity into working code.</h2>
+      </div>
+      <button type="button">Browse Catalog</button>
     </section>
   );
-}
+};
 
 export default Banner;

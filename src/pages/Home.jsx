@@ -1,58 +1,34 @@
 import Banner from "../components/Banner";
-import CourseCard from "../components/CourseCard";
+import Courses from "../components/Courses";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import "./home.css";
 
 function Home() {
   const currentYear = new Date().getFullYear();
-  const slogan = "Connecting learners with technology";
 
   return (
-    <main>
-      <h2>Welcome to CodeBridge Academy</h2>
+    <div className="home">
+      <Header />
+      <main>
+        <section className="welcome-section">
+          <p className="eyebrow">CodeBridge Academy</p>
+          <h1>Welcome to your next chapter in tech.</h1>
+          <p className="slogan">Bridge learning to real software careers</p>
+        </section>
 
-      <p>Welcome to our learning platform for the year {currentYear}.</p>
+        <Banner />
 
-      <p>{slogan}</p>
-
-      <Banner />
-
-      <h2>Our Courses</h2>
-
-      <div className="courses">
-        <CourseCard
-          title="React Fundamentals"
-          category="Web Development"
-          instructor ="John Doe"
-          price={100}
-          isAvailable={true}
-        />
-
-        <CourseCard
-          title="JavaScript Basics"
-          category="Programming"
-          instructor ="Jane Smith"
-          price={80}
-          isAvailable={true}
-        />  
-         
-
-        <CourseCard
-          title="UI/UX Design"
-          category="Design"
-          instructor ="Alice Johnson"
-          price={120}
-          isAvailable={false}
-        />
-        
-        <CourseCard
-          title="node"
-          category="Design"
-          instructor ="Alice Johnson"
-          price={120}
-          isAvailable={false}
-        />
-        
-      </div>
-    </main>
+        <section className="catalog-section" aria-labelledby="catalog-heading">
+          <div className="section-heading">
+            <p className="eyebrow">Learn by building</p>
+            <h2 id="catalog-heading">Featured courses</h2>
+          </div>
+          <Courses />
+        </section>
+      </main>
+      <Footer currentYear={currentYear} />
+    </div>
   );
 }
 

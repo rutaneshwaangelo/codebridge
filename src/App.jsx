@@ -1,16 +1,7 @@
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Home from './pages/Home'
-import './App.css'
+import Home from "./pages/Home";
 
 function App() {
-  return (
-    <div className="app-shell">
-      <Header />
-      <Home />
-      <Footer />
-    </div>
-  )
+  return <Home />
 }
 
-export default App
+export default App;
