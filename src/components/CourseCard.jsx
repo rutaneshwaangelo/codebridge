@@ -1,5 +1,4 @@
 function CourseCard({ title, category, instructor, price , isAvailable }) {
-   
   return (
     <div style={{
       border: '1px solid #cbd5e1',

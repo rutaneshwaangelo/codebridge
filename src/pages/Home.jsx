@@ -1,5 +1,5 @@
 import Banner from "../components/Banner";
-import Courses from "./Courses.jsx";  
+import CourseCard from "../components/CourseCard";
 
 function Home() {
   const currentYear = new Date().getFullYear();
@@ -17,9 +17,41 @@ function Home() {
 
       <h2>Our Courses</h2>
 
-     <Courses />
+      <div className="courses">
+        <CourseCard
+          title="React Fundamentals"
+          category="Web Development"
+          instructor ="John Doe"
+          price={100}
+          isAvailable={true}
+        />
+
+        <CourseCard
+          title="JavaScript Basics"
+          category="Programming"
+          instructor ="Jane Smith"
+          price={80}
+          isAvailable={true}
+        />  
+         
+
+        <CourseCard
+          title="UI/UX Design"
+          category="Design"
+          instructor ="Alice Johnson"
+          price={120}
+          isAvailable={false}
+        />
         
-    
+        <CourseCard
+          title="node"
+          category="Design"
+          instructor ="Alice Johnson"
+          price={120}
+          isAvailable={false}
+        />
+        
+      </div>
     </main>
   );
 }
