@@ -82,6 +82,27 @@ nav a:hover {
   color: #b54d35;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font: 600 0.85rem/1.2 Arial, sans-serif;
+}
+
+.header-link:hover {
+  color: #b54d35;
+}
+
+.header-button {
+  padding: 10px 14px;
+  background: #1d2b2a;
+  color: #fff !important;
+}
+
+.header-button:hover {
+  background: #b54d35;
+}
+
 main {
   padding: 92px 0 110px;
 }

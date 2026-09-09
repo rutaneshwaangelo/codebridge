@@ -8,6 +8,10 @@ const Header = () => {
         <a href="#catalog-heading">Catalog</a>
         <a href="#footer">About</a>
       </nav>
+      <div className="header-actions">
+        <a className="header-link" href="/login">Log in</a>
+        <a className="header-button" href="/register">Register</a>
+      </div>
     </header>
   );
 };
