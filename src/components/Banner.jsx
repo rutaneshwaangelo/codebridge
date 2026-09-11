@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Banner = () => {
   return (
     <section className="banner" aria-labelledby="banner-heading">
@@ -5,7 +7,7 @@ const Banner = () => {
         <p className="banner-label">Start where you are</p>
         <h2 id="banner-heading">Turn curiosity into working code.</h2>
       </div>
-      <button type="button">Browse Catalog</button>
+      <Link className="banner-button" to="/#catalog-heading">Browse Catalog</Link>
     </section>
   );
 };

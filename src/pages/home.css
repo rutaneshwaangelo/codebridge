@@ -161,19 +161,20 @@ h1 {
   font-size: 1.55rem;
 }
 
-.banner button {
+.banner-button {
   flex: 0 0 auto;
   padding: 14px 20px;
   border: 0;
   background: #1d2b2a;
   color: #fff;
   cursor: pointer;
+  text-decoration: none;
   font:
     700 0.85rem Arial,
     sans-serif;
 }
 
-.banner button:hover {
+.banner-button:hover {
   background: #b54d35;
 }
 
