@@ -1,19 +1,24 @@
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Navbar from "./components/Navbar";
+
+import {BrowserRouter,Routes,Route} from "react-router-dom";
 
 function App() {
-  const path = window.location.pathname;
 
-  if (path === "/login") {
-    return <Login />;
-  }
-
-  if (path === "/register") {
-    return <Register />;
-  }
-
-  return <Home />
-}
+return (
+  
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home/>} />
+     <Route path="/login" element={<Login/>}/>
+     <Route path="/register" element={<Register/>} />
+    </Routes>
+  
+  </BrowserRouter>
+)
+  
+};
 
 export default App;
