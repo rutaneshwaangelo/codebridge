@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import { Link } from "react-router-dom";
 import "./auth.css";
 
 const Register = () => {
@@ -25,7 +26,7 @@ const Register = () => {
                         </div>
                         <button className="auth-submit" type="submit">Create account</button>
                     </form>
-                    <p className="auth-switch">Already have an account? <a href="/login">Log in</a></p>
+                    <p className="auth-switch">Already have an account? <Link to="/login">Log in</Link></p>
                 </section>
             </main>
         </div>

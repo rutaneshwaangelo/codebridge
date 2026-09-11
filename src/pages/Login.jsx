@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import { Link } from "react-router-dom";
 import "./auth.css";
 
 const Login = () => {
@@ -21,7 +22,7 @@ const Login = () => {
 						</div>
 						<button className="auth-submit" type="submit">Log in</button>
 					</form>
-					<p className="auth-switch">New to CodeBridge? <a href="/register">Create an account</a></p>
+					<p className="auth-switch">New to CodeBridge? <Link to="/register">Create an account</Link></p>
 				</section>
 			</main>
 		</div>
